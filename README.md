@@ -2,11 +2,11 @@
 
 A production-ready REST API that classifies bank transaction SMS messages into spending categories using a trained machine learning model. Built with FastAPI for high performance and ease of deployment.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project demonstrates building a professional ML-powered REST API that can classify incoming bank SMS notifications into predefined categories (e.g., debit, credit, fraud alert, promotional). The API includes proper error handling, input validation, logging, and is ready for deployment to cloud platforms.
 
-## ✨ Features
+##  Features
 
 - **FastAPI Framework**: Modern, fast Python web framework with automatic OpenAPI documentation
 - **ML Classification**: Uses a pre-trained scikit-learn model for SMS categorization
@@ -18,7 +18,7 @@ This project demonstrates building a professional ML-powered REST API that can c
 - **Environment Configuration**: Configurable via environment variables
 - **Production Ready**: Can be deployed to Render, Railway, Heroku, or Docker
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 bank_sms_classifier/
@@ -33,7 +33,7 @@ bank_sms_classifier/
 └── README.md                        # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -88,7 +88,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 The API will be available at: `http://localhost:8000`
 
-## 📚 API Documentation
+##  API Documentation
 
 Once the API is running, you can access:
 
@@ -96,7 +96,7 @@ Once the API is running, you can access:
 - **ReDoc (Alternative UI)**: http://localhost:8000/redoc
 - **OpenAPI Schema**: http://localhost:8000/openapi.json
 
-## 📡 Endpoints
+##  Endpoints
 
 ### 1. Health Check
 
@@ -165,7 +165,7 @@ Content-Type: application/json
 }
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 Configuration can be managed via environment variables. Create a `.env` file:
 
@@ -179,7 +179,7 @@ MODEL_PATH=bank_sms_classifier.pkl
 - `LOG_LEVEL`: Logging level (DEBUG, INFO, WARNING, ERROR) - Default: INFO
 - `MODEL_PATH`: Path to the pre-trained model file - Default: `bank_sms_classifier.pkl`
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - **FastAPI** (0.135.1): Modern web framework for building APIs
 - **Uvicorn** (0.42.0): ASGI server for running FastAPI
@@ -188,7 +188,7 @@ MODEL_PATH=bank_sms_classifier.pkl
 - **Scikit-learn** (1.8.0): ML library used by the model
 - **Python-dotenv** (1.0.1): Environment variable management
 
-## 📊 Model Details
+##  Model Details
 
 - **Type**: Classification model (likely Naive Bayes or similar)
 - **Input**: SMS text message (lowercase, normalized)
@@ -200,7 +200,7 @@ MODEL_PATH=bank_sms_classifier.pkl
 - Maximum length: 1000 characters
 - Format: Text (will be normalized to lowercase)
 
-## 🚢 Deployment
+##  Deployment
 
 ### Render.com
 ```bash
@@ -225,21 +225,21 @@ docker run -p 8000:8000 bank-sms-classifier
 python main.py
 ```
 
-## 📝 Logging
+##  Logging
 
 The application includes structured logging:
 - All requests are logged with their processing details
 - Errors are logged with context for debugging
 - Log level can be configured via `LOG_LEVEL` environment variable
 
-## 🔐 Security Notes
+##  Security Notes
 
 - Debug traceback is never exposed in API responses
 - Model file path is configurable and not hardcoded
 - Input validation prevents malformed requests
 - Sensitive errors are logged but generic messages are returned to clients
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 **Model file not found:**
 ```
@@ -257,7 +257,7 @@ uvicorn main:app --port 8001
 pip install -r requirements.txt --upgrade
 ```
 
-## 💡 Future Improvements
+##  Future Improvements
 
 - [ ] Add user authentication and API keys
 - [ ] Implement batch prediction endpoint for multiple SMS
@@ -268,15 +268,15 @@ pip install -r requirements.txt --upgrade
 - [ ] Add Docker support for containerization
 - [ ] Create admin dashboard for monitoring
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 👤 Author
+##  Author
 
 Your Name - Computer Science Student | github.com/your-username
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
